@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Antojitos"
+        tools:targetApi="31">
+        <activity android:name=".Recetas.Mireceta2" /> <!-- Agrega esta línea -->
+        <activity android:name=".Recetas.SosAdminActivity" />
+
+        <activity
+            android:name=".Vegano.VentanaReceta"
+            android:exported="false"/>
+
+        <activity
+            android:name=".Vegano.Berenjena_con_soja"
+            android:exported="false" />
+        <activity
+            android:name=".Vegano.Ramen_Vegano"
+            android:exported="false" />
+        <activity
+            android:name=".Vegano.Tofu_a_la_barbacoa"
+            android:exported="false" />
+        <activity
+            android:name=".Recetas.Ajutes"
+            android:exported="false" />
+        <activity
+            android:name=".Refresco.Limon"
+            android:exported="false" />
+        <activity
+            android:name=".Refresco.Mango"
+            android:exported="false" />
+        <activity
+            android:name=".Refresco.Arandano"
+            android:exported="false" />
+        <activity
+            android:name=".Postres.Tiramisu"
+            android:exported="false" />
+        <activity
+            android:name=".Postres.Waffles"
+            android:exported="false" />
+        <activity
+            android:name=".Postres.Flan"
+            android:exported="false" />
+        <activity
+            android:name=".Postres"
+            android:exported="false" />
+        <activity
+            android:name=".Tragos.Shamrock_Sour"
+            android:exported="false" />
+        <activity
+            android:name=".Tragos.Apple_Martini"
+            android:exported="false" />
+        <activity
+            android:name=".Tragos.Mojito"
+            android:exported="false" />
+        <activity
+            android:name=".Comida.Sushi"
+            android:exported="false" />
+        <activity
+            android:name=".Comida.Pizza"
+            android:exported="false" />
+        <activity
+            android:name=".Recetas.Vegano"
+            android:exported="false" />
+        <activity
+            android:name=".Recetas.Refresco"
+            android:exported="false" />
+        <activity
+            android:name=".Recetas.Postres"
+            android:exported="false" />
+        <activity
+            android:name=".Recetas.Tragos"
+            android:exported="false" />
+        <activity
+            android:name=".Hamburguesa"
+            android:exported="false" />
+        <activity
+            android:name=".Recetas.Guardar_Receta"
+            android:exported="false" />
+        <activity
+            android:name=".Recetas.Mireceta"
+            android:exported="false" />
+        <activity
+            android:name=".Recetas.Comidas"
+            android:exported="false" />
+        <activity
+            android:name=".Login.Crear_cuenta"
+            android:exported="false" />
+        <activity
+            android:name=".Login.Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>
